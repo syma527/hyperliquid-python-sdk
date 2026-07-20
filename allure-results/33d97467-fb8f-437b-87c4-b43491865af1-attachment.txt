@@ -1,0 +1,2 @@
+
+【异常测试成功】框架成功捕获到预期的系统报错信息: Non-hexadecimal digit found
