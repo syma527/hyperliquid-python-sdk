@@ -39,12 +39,17 @@ classifiers = [  #! Update me
 "hyperliquid-python-sdk" = "hyperliquid.__main__:app"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 eth-utils = ">=2.1.0,<6.0.0"
 eth-account = ">=0.10.0,<0.14.0"
 websocket-client = "^1.5.1"
 requests = "^2.31.0"
 msgpack = "^1.0.5"
+ddt = "==1.7.2"
+openpyxl = "==3.1.5"
+yamllint = "==1.30.0"
+allure-pytest = "^2.16.0"
+faker = "==40.28.1"
 
 [tool.poetry.group.dev.dependencies]
 python = "^3.10"

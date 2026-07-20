@@ -4,8 +4,8 @@ info:
   description: API for interacting with the Hyperliquid DEX
   version: '0.1'
 servers:
-  - url: https://api.hyperliquid.xyz
-    description: Mainnet
+#  - url: https://api.hyperliquid.xyz
+#    description: Mainnet
   - url: https://api.hyperliquid-testnet.xyz
     description: Testnet
   - url: http://localhost:3001

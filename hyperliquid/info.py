@@ -788,3 +788,7 @@ class Info(API):
 
     def name_to_asset(self, name: str) -> int:
         return self.coin_to_asset[self.name_to_coin[name]]
+
+if __name__ == '__main__':
+    first_in  = Info()
+    first_in.user_state(address="0x7237452d6A4d8D8B7B32A83868E82A1eBf1d58ce")
