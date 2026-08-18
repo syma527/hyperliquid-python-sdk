@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: '{"type": "clearinghouseState", "user": "0x5e9ee1089755c3435139848e47e6635505d5a13a",
+      "dex": ""}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '95'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: https://127.0.0.1:7897/info
+  response:
+    body:
+      string: '{"marginSummary":{"accountValue":"2.319897","totalNtlPos":"0.0","totalRawUsd":"2.319897","totalMarginUsed":"0.0"},"crossMarginSummary":{"accountValue":"2.319897","totalNtlPos":"0.0","totalRawUsd":"2.319897","totalMarginUsed":"0.0"},"crossMaintenanceMarginUsed":"0.0","withdrawable":"2.319897","assetPositions":[],"time":1785912283291}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '334'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 05 Aug 2026 06:44:43 GMT
+      Server:
+      - nginx/1.22.1
+      Via:
+      - 1.1 4d6f7160ff0f474239473fae02a9e6d8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - MToseZNI_Zk4oAIiJV8VTIS-f3mKWYIW125zg2T9bwp9ZVgdJEoHVQ==
+      X-Amz-Cf-Pop:
+      - SIN3-P3
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      vary:
+      - origin
+      - access-control-request-method
+      - access-control-request-headers
+    status:
+      code: 200
+      message: OK
+version: 1
