@@ -13,7 +13,7 @@ class Context:
 
     # 动态定位根目录下的临时上下文文件
     DB_FILE = Path(__file__).parent.parent / "outputs" / ".context_cache.json"
-
+    print(DB_FILE)
     @classmethod
     def set(cls, key: str, value: Any) -> None:
         """存入动态上下文变量"""
@@ -47,3 +47,6 @@ class Context:
             except Exception:
                 return default
         return default
+
+if __name__ == '__main__':
+    n = Context()

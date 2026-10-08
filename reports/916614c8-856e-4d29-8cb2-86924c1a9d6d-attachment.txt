@@ -1,0 +1,1 @@
+[32mINFO    [0m XSHOP:conftest.py:20 会话结束,关闭连接池

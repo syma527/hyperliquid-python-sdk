@@ -1,14 +1,24 @@
 #交易所接口测试网自动化弹药库数据
 
 - case_name: "验证接口连通性健康度检查"
+  feature: "行情接口"
+  story: "元数据查询"
   payload:
     type: "meta"
   expected_status: 200
 
 - case_name: "验证全零地址资产风控快照"
+  feature: "资产快照"
+  story: "清算状态查询"
   payload:
     type: "clearinghouseState"
     user: "0x0000000000000000000000000000000000000000"
   expected_status: 200
 
+- case_name: "验证全币种价格查询"
+  feature: "行情接口"
+  story: "实时价格"
 
+  payload:
+    type: "allMids"
+  expected_status: 200

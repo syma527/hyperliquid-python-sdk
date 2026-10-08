@@ -1,0 +1,2 @@
+[32mINFO    [0m XSHOP:conftest.py:16 设置全局api客户端,省略重复请求,只在这一块设置就好了
+[32mINFO    [0m XSHOP:api_client.py:31 ←200/info

@@ -621,3 +621,10 @@ testing.py
 examples/config.json
 
 playground/
+
+tests/htmlcov
+
+htmlcov
+
+allure-results/
+
