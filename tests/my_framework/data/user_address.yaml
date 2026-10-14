@@ -1,0 +1,5 @@
+- name : "真实账户"
+  user_address: "0x7237452d6A4d8D8B7B32A83868E82A1eBf1d58ce"
+
+- name: "全零地址"
+  user_address: "0x0000000000000000000000000000000000000000"

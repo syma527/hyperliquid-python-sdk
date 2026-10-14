@@ -1,7 +1,7 @@
 from typing import Any
+from requests import  Response
 
-
-def assert_status(resp, expected: int = 200) -> None:
+def assert_status(resp:Response, expected: int = 200) -> None:
     """校验 HTTP 状态码；失败时附带响应体片段，方便定位"""
     assert resp.status_code == expected, (
         f"HTTP status mismatch: expected {expected}, got {resp.status_code}, "

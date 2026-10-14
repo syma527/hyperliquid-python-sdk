@@ -8,13 +8,14 @@ import json
 DATA_PATH = Path(__file__).resolve().parent / "data" / "hp_data.yaml"
 
 
-def load_yaml():
-    if not DATA_PATH.exists():
-        raise FileNotFoundError(f"yaml文件不存在{DATA_PATH}")
-    with open(DATA_PATH,'r',encoding="utf-8") as f:
+def load_yaml(path:Path = DATA_PATH):
+
+    if not path.exists():
+        raise FileNotFoundError(f"yaml文件不存在{path}")
+    with open(path,'r',encoding="utf-8") as f:
         data=  yaml.safe_load(f)
     if not data:
-        raise  ValueError(f"弹药库为空{DATA_PATH}")
+        raise  ValueError(f"弹药库为空{path}")
     return data
 
 

@@ -1,5 +1,5 @@
 """第10课：接口封装层——把裸 HTTP 调用升级成业务语义方法"""
-
+from tests.my_framework.common.assert_common import assert_status
 
 class InfoApi:
     """Hyperliquid /info 端点的业务语义封装（薄封装，单一职责）"""
@@ -10,7 +10,7 @@ class InfoApi:
     def _query(self, payload: dict) -> dict:
         """所有 /info 查询共用的底层：发请求 + 统一状态校验"""
         resp = self._client.post(endpoint="/info", json_data=payload)
-        assert resp.status_code == 200, f"/info 查询失败: {payload}"
+        assert_status(resp,expected=200)
         return resp.json()
 
     def meta(self) -> dict:
