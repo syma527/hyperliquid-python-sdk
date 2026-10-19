@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: '{"type": "delegatorHistory", "user": "0x2ba553d9f990a3b66b03b2dc0d030dfc1c061036"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '82'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: https://127.0.0.1:7897/info
+  response:
+    body:
+      string: '[{"time":1770488279004,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"withdrawal":{"amount":"10069.550225","phase":"finalized"}}},{"time":1769883478716,"hash":"0x1469673df1b25f5e15e304346bc04402085700238cb57e30b8321290b0b63948","delta":{"withdrawal":{"amount":"10069.550225","phase":"initiated"}}},{"time":1769883438471,"hash":"0x35e975bdae13aa93376304346bbe48020cf900a34916c965d9b221106d17847d","delta":{"delegate":{"validator":"0xb8f45222a3246a2b0104696a1df26842007c5bc5","amount":"10069.550225","isUndelegate":true}}},{"time":1760818224028,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"withdrawal":{"amount":"90621.0","phase":"finalized"}}},{"time":1760213423279,"hash":"0x79c7481fd8429a747b41042d4a177202094200057345b9461d8ff3729746745f","delta":{"withdrawal":{"amount":"90621.0","phase":"initiated"}}},{"time":1760213374730,"hash":"0x0c057c08faed226a0d7f042d4a151002026600ee95e0413cafce275bb9e0fc54","delta":{"delegate":{"validator":"0xb8f45222a3246a2b0104696a1df26842007c5bc5","amount":"90621.0","isUndelegate":true}}},{"time":1751382238782,"hash":"0xaea14981ae79c88826b104269e1e61020161008a69327e1bd0716a870eb0032e","delta":{"delegate":{"validator":"0xb8f45222a3246a2b0104696a1df26842007c5bc5","amount":"89968.0","isUndelegate":false}}},{"time":1751382217852,"hash":"0xa41a74f16345b8b0ba4e04269e1d5d018200756676283eee1bbc9d4e86d0d942","delta":{"cDeposit":{"amount":"89968.0"}}},{"time":1746636092325,"hash":"0x1520bf77c0dae738c8130422ff52cf01cc00f7c6f145792f2eeca62d178cd048","delta":{"delegate":{"validator":"0xb8f45222a3246a2b0104696a1df26842007c5bc5","amount":"10000.1","isUndelegate":false}}},{"time":1746636051729,"hash":"0x88f45bda40a6b572ef230422ff50cf01e20075ab01e3a48566ea9979a7ac6313","delta":{"cDeposit":{"amount":"10000.1"}}}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1824'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 17 Oct 2026 09:17:21 GMT
+      Server:
+      - nginx/1.22.1
+      Via:
+      - 1.1 3a84d2bd9317997b6f200f2ca41be03c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - 7AhsfNpha1a0lCkhh_3bFGYzVS3oO4jL0ZoImxBZaesz8hxP-c7oxQ==
+      X-Amz-Cf-Pop:
+      - SIN3-P5
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      vary:
+      - origin
+      - access-control-request-method
+      - access-control-request-headers
+    status:
+      code: 200
+      message: OK
+version: 1

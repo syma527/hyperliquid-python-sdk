@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: '{"type": "extraAgents", "user": "0xd42f2bB0e06455eDB652e27b7374FC2bDa8448ee"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '77'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: https://127.0.0.1:7897/info
+  response:
+    body:
+      string: '[]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 17 Oct 2026 09:17:22 GMT
+      Server:
+      - nginx/1.22.1
+      Via:
+      - 1.1 8c1a9dfa61284dda7b526c5fbe6c11b6.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - mBOHGsTaErJyt_G-9h1ZsLuS-4A-BNty_h2elz_9C4n2TdrRBjgtWQ==
+      X-Amz-Cf-Pop:
+      - SIN3-P5
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      vary:
+      - origin
+      - access-control-request-method
+      - access-control-request-headers
+    status:
+      code: 200
+      message: OK
+version: 1

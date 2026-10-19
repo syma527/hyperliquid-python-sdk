@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: '{"type": "userFunding", "user": "0xb7b6f3cea3f66bf525f5d8f965f6dbf6d9b017b2",
+      "startTime": 1681923833000, "endTime": 1682010233000}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '131'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: https://127.0.0.1:7897/info
+  response:
+    body:
+      string: '[{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"APE","usdc":"0.145796","szi":"40.13333333","fundingRate":"-0.00029319","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"ARB","usdc":"2.694388","szi":"-6091.03333333","fundingRate":"0.0001","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"ATOM","usdc":"0.056134","szi":"-115.77333333","fundingRate":"0.00001378","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"AVAX","usdc":"-0.572915","szi":"100.86333333","fundingRate":"0.0001","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"BNB","usdc":"-0.030851","szi":"0.31933333","fundingRate":"0.0001","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"BTC","usdc":"5.950454","szi":"-0.68582","fundingRate":"0.00010081","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"DOGE","usdc":"-0.007328","szi":"18286.33333333","fundingRate":"0.00000201","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"DYDX","usdc":"-0.184592","szi":"237.26666667","fundingRate":"0.00009324","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"ETH","usdc":"3.414774","szi":"-5.8509","fundingRate":"0.0001","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"LTC","usdc":"0.039392","szi":"-3.72","fundingRate":"0.00003905","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"MATIC","usdc":"0.462944","szi":"2553.1","fundingRate":"-0.00005673","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"OP","usdc":"-0.094193","szi":"124.83333333","fundingRate":"0.0001","nSamples":3}},{"time":1681948800000,"hash":"0x0000000000000000000000000000000000000000000000000000000000000000","delta":{"type":"funding","coin":"SOL","usdc":"0.023856","szi":"-3.48","fundingRate":"0.0001","nSamples":3}}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2796'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 17 Oct 2026 09:17:17 GMT
+      Server:
+      - nginx/1.22.1
+      Via:
+      - 1.1 5e55efd80cc026d46ef651be2161ca92.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - p8MyNWVUWj1lYssyI3GnSoc0AtDvyRvg2GS0ohZFh_q-4S_jW4Tqyw==
+      X-Amz-Cf-Pop:
+      - SIN3-P5
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      vary:
+      - origin
+      - access-control-request-method
+      - access-control-request-headers
+    status:
+      code: 200
+      message: OK
+version: 1

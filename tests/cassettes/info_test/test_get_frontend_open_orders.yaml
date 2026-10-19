@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: '{"type": "frontendOpenOrders", "user": "0xCB331197E84f135AB9Ed6FB51Cd9757c0bd29d0D",
+      "dex": ""}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '95'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: https://127.0.0.1:7897/info
+  response:
+    body:
+      string: '[{"coin":"HYPE","side":"A","limitPx":"96.0","sz":"15.0","oid":568473704040,"timestamp":1791447667422,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"95.0","sz":"30.0","oid":568473501663,"timestamp":1791447648097,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"30.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"94.0","sz":"15.0","oid":568473417835,"timestamp":1791447639996,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"93.0","sz":"15.0","oid":568473344890,"timestamp":1791447635533,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"92.0","sz":"15.0","oid":568473311975,"timestamp":1791447631602,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"91.0","sz":"15.0","oid":568473270564,"timestamp":1791447626705,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"90.0","sz":"15.0","oid":568473222355,"timestamp":1791447621778,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"89.0","sz":"15.0","oid":568473174863,"timestamp":1791447617194,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"98.5","sz":"50.0","oid":555282815436,"timestamp":1790256365994,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"50.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"98.0","sz":"15.0","oid":555282692903,"timestamp":1790256356937,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"97.5","sz":"15.0","oid":555282599080,"timestamp":1790256350381,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"97.0","sz":"15.0","oid":555282465016,"timestamp":1790256341779,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"96.0","sz":"15.0","oid":555282351797,"timestamp":1790256334473,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"15.0","tif":"Gtc","cloid":null},{"coin":"HYPE","side":"A","limitPx":"98.0","sz":"50.0","oid":553950234458,"timestamp":1790155635558,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"50.0","tif":"Gtc","cloid":null},{"coin":"@125","side":"A","limitPx":"0.010509","sz":"13.91","oid":440015561104,"timestamp":1779614607731,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"13.91","tif":"Gtc","cloid":null},{"coin":"@93","side":"A","limitPx":"0.00002694","sz":"355.0","oid":440011780581,"timestamp":1779614359902,"triggerCondition":"N/A","isTrigger":false,"triggerPx":"0.0","children":[],"isPositionTpsl":false,"reduceOnly":false,"orderType":"Limit","origSz":"355.0","tif":"Gtc","cloid":null}]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '4478'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 17 Oct 2026 09:17:12 GMT
+      Server:
+      - nginx/1.22.1
+      Via:
+      - 1.1 76713d694e592c32ff1e265b3f072d86.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - KVFHYhM3hl6b6el5k9Na1oEfDxkrdcHXG2S-4x4ePhAiOieNlL4tSg==
+      X-Amz-Cf-Pop:
+      - SIN3-P5
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      vary:
+      - origin
+      - access-control-request-method
+      - access-control-request-headers
+    status:
+      code: 200
+      message: OK
+version: 1

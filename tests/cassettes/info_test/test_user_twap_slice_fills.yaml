@@ -1,0 +1,52 @@
+interactions:
+- request:
+    body: '{"type": "userTwapSliceFills", "user": "0x31ca8395cf837de08b24da3f660e77761dfb974b"}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '84'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.32.3
+    method: POST
+    uri: https://127.0.0.1:7897/info
+  response:
+    body:
+      string: '[]'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json
+      Date:
+      - Sat, 17 Oct 2026 09:17:20 GMT
+      Server:
+      - nginx/1.30.3
+      Via:
+      - 1.1 d6c5e2990d1950053025c4526a1ecbc2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - MTlk5Y_4I7LtbgUEDHfDOO6MxepNgW0qdbwHVXYeAUheQq_v35jtWw==
+      X-Amz-Cf-Pop:
+      - SIN3-P5
+      X-Cache:
+      - Miss from cloudfront
+      access-control-allow-origin:
+      - '*'
+      access-control-expose-headers:
+      - '*'
+      vary:
+      - origin
+      - access-control-request-method
+      - access-control-request-headers
+    status:
+      code: 200
+      message: OK
+version: 1
