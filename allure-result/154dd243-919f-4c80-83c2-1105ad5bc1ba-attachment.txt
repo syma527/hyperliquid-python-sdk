@@ -1,1 +1,0 @@
-[32mINFO    [0m XSHOP:test_redact_demo.py:5 demo secret 0xbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
