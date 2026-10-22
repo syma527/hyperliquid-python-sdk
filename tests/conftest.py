@@ -10,11 +10,10 @@ import pytest
 from tests.my_framework.common.api_client import ApiClient
 from pathlib import  Path
 from tests.my_framework.common.infoapi import InfoApi
+from tests.my_framework.tools.redact import redact_text
 
+#adoption方法把写好的环境值读出来,--env,default = None 是如果用户没给,就为空,走默认,为空的话,才能自己输入
 
-"""
-adoption方法把写好的环境值读出来,--env,default = None 是如果用户没给,就为空,走默认,为空的话,才能自己输入
-"""
 def pytest_addoption(parser):
     """为什么要这个函数,因为有了他可以命令行指定配置环境"""
     parser.addoption(
@@ -49,9 +48,8 @@ def pytest_runtest_makereport(item,call):
     """用例失败,自动把日志贴进allure报告"""
 
     outcome = yield
-
+    # 拿到结果后,拆解结果
     result = outcome.get_result()
-
     if result.failed:
         today = time.strftime("%Y_%m_%d")
         log_file = (
@@ -61,7 +59,7 @@ def pytest_runtest_makereport(item,call):
         if log_file.exists():
             content = log_file.read_text(encoding="utf-8")
             content = content[-2000:]
-
+            content = redact_text(content)
             allure.attach(
                 content,
                 name=f"失败日志{item.name}",

@@ -628,5 +628,6 @@ htmlcov
 
 allure-results/
 
-
-
+reports/
+allure-result/
+.env

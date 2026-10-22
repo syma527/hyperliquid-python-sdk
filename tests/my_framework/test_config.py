@@ -1,10 +1,10 @@
 import pytest
-
 from hyperliquid.utils.constants import MAINNET_API_URL, TESTNET_API_URL
 from tests.my_framework.common.config import ENV_MAP, resolve_base_url
 
 
 def test_resolve_explicit_env_wins():
+
     """命令行传入的 --env 优先级最高"""
     assert resolve_base_url("mainnet") == MAINNET_API_URL
 
