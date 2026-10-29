@@ -1,6 +1,10 @@
 import requests
 import urllib3
 from requests import session
+import json
+
+from tests.my_framework.common.exceptions import NetworkError, HttpStatusError
+
 # 优雅地关闭未验证 HTTPS 请求的黄色警告（大厂必备小细节）
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 from tests.my_framework.tools.my_log import log
@@ -23,14 +27,15 @@ class ApiClient:
         """统一封装的 POST 安全请求方法"""
         # 拼接url
         url  = f"{self.base_url}{endpoint}"
-        try:
-            response =  self.session.post(url,json=json_data,timeout=10)
-        except requests.exceptions.RequestException as e:
-            log.error(f"错误,通信异常| {e}")
-            raise
-        log.info(f"←{response.status_code}{endpoint}")
-        return response
 
+        try:
+            response = self.session.post(url,json=json_data,timeout=(3,30))
+        except requests.RequestException as e:
+            log.error(f"network error {url}{e}")
+            raise  NetworkError(f"Post{url}faild {e}",cause=e) from e
+
+        log.info(f"response {response.status_code}{endpoint}")
+        return response
 
 
 
