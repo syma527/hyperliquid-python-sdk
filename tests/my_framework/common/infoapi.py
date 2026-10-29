@@ -1,5 +1,7 @@
 """第10课：接口封装层——把裸 HTTP 调用升级成业务语义方法"""
 from tests.my_framework.common.assert_common import assert_status
+from requests.exceptions import JSONDecodeError
+from tests.my_framework.common.exceptions import InvalidJsonError
 
 class InfoApi:
     """Hyperliquid /info 端点的业务语义封装（薄封装，单一职责）"""
@@ -11,7 +13,11 @@ class InfoApi:
         """所有 /info 查询共用的底层：发请求 + 统一状态校验"""
         resp = self._client.post(endpoint="/info", json_data=payload)
         assert_status(resp,expected=200)
-        return resp.json()
+        try:
+            return resp.json()
+        except JSONDecodeError as e:
+            raise InvalidJsonError(resp.text) from e
+
 
     def meta(self) -> dict:
         """查询永续合约元数据"""
