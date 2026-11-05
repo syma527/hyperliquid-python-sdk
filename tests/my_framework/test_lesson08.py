@@ -39,7 +39,7 @@ def test_api_data_driven(api_client,case_data):
 
     #把响应也加到报告中
     allure.attach(
-        json.dumps(resp.json(),ensure_ascii=False,indent=2)[:3000],
+        json.dumps(resp.json(),ensure_ascii=False,indent=2),
         name="响应报文",
         attachment_type=allure.attachment_type.JSON
     )
